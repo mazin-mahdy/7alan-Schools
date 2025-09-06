@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin Editor - 7alan Schools</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* small admin tweaks */
+    .admin-wrap {width:92%;max-width:1100px;margin:28px auto;}
+    .admin-row{display:flex;gap:12px;margin-bottom:12px;align-items:center}
+    .admin-row input, .admin-row select{padding:8px;border-radius:8px;border:1px solid #ddd;flex:1}
+    .btn {padding:9px 12px;border-radius:8px;border:none;cursor:pointer}
+    .btn-primary{background:#0078d7;color:#fff}
+    .btn-ghost{background:#f3f4f6}
+    .small{font-size:13px;padding:6px 8px}
+    .category-list{margin-top:10px}
+    .category-card{padding:12px;background:#fff;border-radius:10px;margin-bottom:10px;box-shadow:0 8px 20px rgba(2,20,60,.04)}
+    .video-item{display:flex;gap:8px;align-items:center;margin:8px 0}
+    .video-item input{flex:1;padding:8px;border-radius:6px;border:1px solid #e6e6e6}
+  </style>
+</head>
+<body>
+  <div class="admin-wrap">
+    <h1>Admin Editor</h1>
+    <p>Use this page to add/edit categories and videos. Changes save to <code>localStorage.coursesData</code>.</p>
+
+    <div class="admin-row">
+      <input id="newCategoryName" placeholder="New category name (e.g. 'HTML')" />
+      <button id="addCategoryBtn" class="btn btn-primary">Add Category</button>
+      <button id="resetBtn" class="btn btn-ghost small">Reset to defaults</button>
+      <button id="exportBtn" class="btn btn-ghost small">Export JSON</button>
+      <button id="importBtn" class="btn btn-ghost small">Import JSON</button>
+      <input id="importArea" placeholder="Paste JSON here to import" style="flex:1" />
+    </div>
+
+    <div id="categoriesList" class="category-list"></div>
+
+    <div style="margin-top:18px">
+      <button id="saveBtn" class="btn btn-primary">Save & Publish</button>
+      <span style="margin-left:12px;color:#555;font-size:14px">After saving, open <code>index.html</code> or refresh it to see changes</span>
+    </div>
+  </div>
+
+  <script src="courses.js" defer></script>
+  <script src="admin.js" defer></script>
+</body>
+</html>

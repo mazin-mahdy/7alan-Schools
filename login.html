@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>7alan Schools - Login</title>
+  <link rel="stylesheet" href="login.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="logo">
+      <i class="fas fa-graduation-cap"></i>
+      <h1>7alan Schools</h1>
+    </div>
+
+    <form id="loginForm" autocomplete="off">
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input id="username" type="text" placeholder="Enter username" required>
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="Enter password" required>
+      </div>
+
+      <button type="submit" class="btn-login">
+        <span class="text">Login</span>
+        <span class="loading"><span class="loading-spinner"></span> Logging in...</span>
+      </button>
+
+      <div id="errorMessage" class="error-message">Invalid username or password.</div>
+    </form>
+
+    <p style="margin-top:18px; font-size:14px;">
+      Don't have an account? <a href="signup.html">Sign up</a>
+    </p>
+
+    <p style="margin-top:6px; font-size:13px;">
+      Admin? <a href="admin.html" target="_blank">Open Admin Editor</a>
+    </p>
+
+    <div class="footer">&copy; 2025 7alan Schools</div>
+  </div>
+
+  <script src="login.js" defer></script>
+</body>
+</html>

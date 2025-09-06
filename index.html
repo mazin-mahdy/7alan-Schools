@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>7alan Schools - Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" defer></script>
+  <script src="courses.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo"><i class="fas fa-graduation-cap"></i> 7alan Schools</div>
+      <input id="searchInput" placeholder="Search videos or press Enter..." />
+      <select id="categoryFilter" title="Filter category">
+        <option value="all">All Categories</option>
+      </select>
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1>Learning Dashboard</h1>
+    <p>Pick a topic and start learning — HTML, CSS, JS, React, Backend, python...</p>
+
+    <div id="categoriesContainer"></div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>7alan Schools - Sign Up</title>
+  <link rel="stylesheet" href="login.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="logo">
+      <i class="fas fa-user-plus"></i>
+      <h1>Create Account</h1>
+    </div>
+
+    <form id="signupForm" autocomplete="off">
+      <div class="input-group">
+        <label for="newUsername">Username</label>
+        <input id="newUsername" type="text" placeholder="Choose a username" required>
+      </div>
+
+      <div class="input-group">
+        <label for="newPassword">Password</label>
+        <input id="newPassword" type="password" placeholder="Choose a password" required>
+      </div>
+
+      <button type="submit" class="btn-login">
+        <span class="text">Sign Up</span>
+        <span class="loading"><span class="loading-spinner"></span> Creating...</span>
+      </button>
+
+      <div id="signupMessage" class="error-message"></div>
+    </form>
+
+    <p style="margin-top:18px; font-size:14px;">
+      Already have an account? <a href="login.html">Log in</a>
+    </p>
+
+    <div class="footer">&copy; 2025 7alan Schools</div>
+  </div>
+
+  <script src="signup.js" defer></script>
+</body>
+</html>
